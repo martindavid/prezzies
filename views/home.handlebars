@@ -32,56 +32,81 @@
       <div class="filter-content">
         <span class="title">Personalized Gift Finder</span>
         <div class="statement">
-          <span class="GiftGuideStatementPart fadeIn">I am shopping for<span class="GiftGuideStatementKeyword  fadeIn">...</span></span>
+          <span>I am shopping for<span id="to-whom-label">...</span></span>
+          <span id="categories-span">who like <span id="categories-label">...</span></span>
+          <span id="budget-span">and my budget is 
+              <select class="form-control select select-primary" data-toggle="select">
+                <option value="0">Choose hero</option>
+                <option value="1">Spider Man</option>
+                <option value="2">Wolverine</option>
+                <option value="3">Captain America</option>
+                <option value="4" selected>X-Men</option>
+                <option value="5">Crocodile</option>
+              </select>
+          </span>
         </div>
         <div class="filter-tag-container">
-            <div class="row" id="first-option">
-              <div class="col-md-3 col-xs-3">
-                <a href="">
-                  <img alt="" src="https://images-na.ssl-images-amazon.com/images/G/01/gcx/gf/age-group-woman-circle._CB278609004_.png" class="filter-tag">
-                </a>
-              </div>
-              <div class="col-md-3 col-xs-3">
-                <a href="">
-                  <img alt="" src="https://images-na.ssl-images-amazon.com/images/G/01/gcx/gf/age-group-man-circle._CB278609306_.png" class="filter-tag">
-                </a>
-              </div>
-              <div class="col-md-3 col-xs-3">
-                <a href="">
-                  <img alt="" src="https://images-na.ssl-images-amazon.com/images/G/01/gcx/gf/age-group-teen-circle._CB278609296_.png" class="filter-tag">
-                </a>
-              </div>
-              <div class="col-md-3 col-xs-3">
-                <a href="">
-                  <img alt="" src="https://images-na.ssl-images-amazon.com/images/G/01/gcx/gf/age-group-kid8-circle._CB278609311_.png" class="filter-tag">
-                </a>
-              </div>
-              <div class="col-md-4 col-xs-4">
-                <a href="">
-                  <img alt="" src="https://images-na.ssl-images-amazon.com/images/G/01/gcx/gf/age-group-kid4-circle._CB278609283_.png" class="filter-tag">
-                </a>
-              </div>
-              <div class="col-md-4 col-xs-4">
-                <a href="">
-                  <img alt="" src="https://images-na.ssl-images-amazon.com/images/G/01/gcx/gf/age-group-kid2-circle._CB278609285_.png" class="filter-tag">
-                </a>
-              </div>
-              <div class="col-md-4 col-xs-4">
-                <a href="">
-                  <img alt="" src="https://images-na.ssl-images-amazon.com/images/G/01/gcx/gf/age-group-kid0-circle._CB278609295_.png" class="filter-tag">
-                </a>
-              </div>
+          <div class="row" id="first-category-container">
+            <div class="col-md-3 col-xs-3">
+              <a href="#" class="first-category">
+                <img alt="" src="https://images-na.ssl-images-amazon.com/images/G/01/gcx/gf/age-group-woman-circle._CB278609004_.png" class="filter-tag">
+              </a>
+            </div>
+            <div class="col-md-3 col-xs-3">
+              <a href="#" class="first-category">
+                <img alt="" src="https://images-na.ssl-images-amazon.com/images/G/01/gcx/gf/age-group-man-circle._CB278609306_.png" class="filter-tag">
+              </a>
+            </div>
+            <div class="col-md-3 col-xs-3">
+              <a href="#" class="first-category">
+                <img alt="" src="https://images-na.ssl-images-amazon.com/images/G/01/gcx/gf/age-group-teen-circle._CB278609296_.png" class="filter-tag">
+              </a>
+            </div>
+            <div class="col-md-3 col-xs-3">
+              <a href="#">
+                <img alt="" src="https://images-na.ssl-images-amazon.com/images/G/01/gcx/gf/age-group-kid8-circle._CB278609311_.png" class="filter-tag">
+              </a>
+            </div>
+            <div class="col-md-4 col-xs-4">
+              <a href="#" class="first-category">
+                <img alt="" src="https://images-na.ssl-images-amazon.com/images/G/01/gcx/gf/age-group-kid4-circle._CB278609283_.png" class="filter-tag">
+              </a>
+            </div>
+            <div class="col-md-4 col-xs-4">
+              <a href="#">
+                <img alt="" src="https://images-na.ssl-images-amazon.com/images/G/01/gcx/gf/age-group-kid2-circle._CB278609285_.png" class="filter-tag">
+              </a>
+            </div>
+            <div class="col-md-4 col-xs-4">
+              <a href="#" class="first-category">
+                <img alt="" src="https://images-na.ssl-images-amazon.com/images/G/01/gcx/gf/age-group-kid0-circle._CB278609295_.png" class="filter-tag">
+              </a>
             </div>
           </div>
+          <div id="second-category-container">
+              <button class="GiftGuideTag" data-text="adventurous" style="opacity: 1; display: inline-block;">adventurous</button>
+              <button class="GiftGuideTag" data-text="creative" style="opacity: 1; display: inline-block;">creative</button>
+              <button class="GiftGuideTag" data-text="chic" style="opacity: 1; display: inline-block;">chic</button>
+              <button class="GiftGuideTag" data-text="intellectual" style="opacity: 1; display: inline-block;">intellectual</button>
+              <button class="GiftGuideTag" data-text="technical" style="opacity: 1; display: inline-block;">technical</button>
+              <button class="GiftGuideTag" data-text="spiritual" style="opacity: 1; display: inline-block;">spiritual</button>
+              <button class="GiftGuideTag" data-text="playful" style="opacity: 1; display: inline-block;">playful</button>
+          </div>
+        </div>
       </div>
       <div>
-            <ul class="pagination">
-              <li class="active"><a href="#fakelink">1</a></li>
-              <li><a href="#fakelink">2</a></li>
-              <li><a href="#fakelink">3</a></li>
-              <li><a href="#fakelink">4</a></li>
-            </ul>
-          </div>
+        <ul class="pagination">
+          <li class="active"><a href="#fakelink">1</a></li>
+          <li><a href="#fakelink">2</a></li>
+          <li><a href="#fakelink">3</a></li>
+          <li><a href="#fakelink">4</a></li>
+        </ul>
+      </div>
+      <div class="row" id="finish-button">
+        <div class="col-md-12">
+          <a class="btn btn-primary btn-lg btn-block" href="#">Surprise Me</a>
+        </div>
+      </div>
     </div>
   </div>
 </div>

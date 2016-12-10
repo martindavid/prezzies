@@ -338,11 +338,28 @@ textarea {
   margin-bottom: 100px;
 }
 
-
 .filter-container .filter-content {
     position: relative;
     min-height: 340px;
     height: 100%;
+}
+
+.filter-container .GiftGuideTag {
+  border-radius: 22px;
+    border: 1px solid #1abc9c;
+    padding: 4px 20px 7px 20px;
+    margin: 5px;
+    font-size: 22px;
+    color: #1abc9c;
+    outline: none;
+    -webkit-transition: color 200ms, background-color 200ms;
+    transition: color 200ms, background-color 200ms;
+    background-color: transparent;
+}
+
+button.GiftGuideTag:hover{
+  background: #1abc9c;
+  color: white;
 }
 
 .filter-container .title {
