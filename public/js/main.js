@@ -18,7 +18,7 @@ $(function() {
   });
 
   $(document).ready(function() {
-    $('#recommendation-part').hide();
+    //$('#recommendation-part').hide();
     $('#loader').hide();
   });
 

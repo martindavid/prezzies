@@ -14,7 +14,7 @@
                 <span class="title">Personalized Gift Finder</span>
                 <div class="statement">
                     <span>I am shopping for 
-                        <select class="form-control select select-primary" data-toggle="select" id="person-num-select">
+                        <select class="form-control select select-primary" style="width:10px" data-toggle="select" id="person-num-select">
                             <option value="1">1</option>
                             <option value="2">2</option>
                             <option value="3">3</option>
@@ -44,73 +44,82 @@
     <div class="main-container" id="recommendation-part">
         <div class="recommendation-container">
             <div class="row">
-                <div class="col-md-4 recommendation-content">
-                    <p>Your first mate</p>
-                    <img src="https://images-na.ssl-images-amazon.com/images/I/61BUoWgqh5L._SX496_BO1,204,203,200_.jpg" alt="example-image" class="img-rounded img-responsive">
-                    <p>Weird but True 7: 300 Outrageous Facts</p>
-                    <div class="row">
-                        <div class="col-md-6">
-                            <a class="btn btn-info btn-lg btn-block" href="#">Love it</a>
+                <div class="col-md-6">
+                    <div class="card large sticky-action">
+                        <button class="scroller-button-left"></button>
+                        <div class="card-image waves-effect waves-block waves-light">
+                            <img class="activator img-responsive" src="https://images-na.ssl-images-amazon.com/images/I/510y4G3dfuL.jpg">
                         </div>
-                        <div class="col-md-6">
-                            <a class="btn btn-warning btn-lg btn-block" href="#">Find me another</a>
+                        <div class="card-content">
+                            <span class="card-title activator grey-text text-darken-4">Card Title</span>
+                            <p><a href="#">This is a link</a></p>
+                        </div>
+                        <div class="card-action">
+                            <select class="form-control select select-primary" id="budget-select" data-toggle="select">
+                                <option value="1">Any Price</option>
+                                <option value="2">Under $20</option>
+                                <option value="3">$20 to $40</option>
+                                <option value="4">$40 & Above</option>
+                            </select>
+                            <select class="form-control select select-primary" id="budget-select" data-toggle="select">
+                                <option value="1">Any Price</option>
+                                <option value="2">Under $20</option>
+                                <option value="3">$20 to $40</option>
+                                <option value="4">$40 & Above</option>
+                            </select>
+                        </div>
+                        <div class="card-reveal">
+                            <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+                            <p>Here is some more information about this product that is only revealed once clicked on.</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 recommendation-content">
-                    <p>Your second mate</p>
-                    <img src="https://images-na.ssl-images-amazon.com/images/I/61BUoWgqh5L._SX496_BO1,204,203,200_.jpg" alt="example-image" class="img-rounded img-responsive">
-                    <p>Weird but True 7: 300 Outrageous Facts</p>
-                    <div class="row">
-                        <div class="col-md-6">
-                            <a class="btn btn-info btn-lg btn-block" href="#">Love it</a>
+                <div class="col-md-6">
+                    <div class="card large">
+                        <div class="card-image waves-effect waves-block waves-light">
+                            <img class="activator img-responsive" src="https://images-na.ssl-images-amazon.com/images/I/61BUoWgqh5L._SX496_BO1,204,203,200_.jpg">
                         </div>
-                        <div class="col-md-6">
-                            <a class="btn btn-warning btn-lg btn-block" href="#">Find me another</a>
+                        <div class="card-content">
+                            <span class="card-title activator grey-text text-darken-4">Card Title</span>
+                            <p><a href="#">This is a link</a></p>
+                        </div>
+                        <div class="card-reveal">
+                            <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+                            <p>Here is some more information about this product that is only revealed once clicked on.</p>
                         </div>
                     </div>
                 </div>
+            </div>
+            <div class="row">
                 <div class="col-md-4 recommendation-content">
-                    <p>Your third mate</p>
+                    <button class="scroller-button-left"></button>
+                    <p>Recepient 1</p>
                     <img src="https://images-na.ssl-images-amazon.com/images/I/61BUoWgqh5L._SX496_BO1,204,203,200_.jpg" alt="example-image" class="img-rounded img-responsive">
                     <p>Weird but True 7: 300 Outrageous Facts</p>
-                    <div class="row">
-                        <div class="col-md-6">
-                            <a class="btn btn-info btn-lg btn-block" href="#">Love it</a>
-                        </div>
-                        <div class="col-md-6">
-                            <a class="btn btn-warning btn-lg btn-block" href="#">Find me another</a>
-                        </div>
-                    </div>
+                    <button class="scroller-button-right"></button>
+                </div>
+                <div class="col-md-4 recommendation-content">
+                    <p>Recepient 2</p>
+                    <img src="https://images-na.ssl-images-amazon.com/images/I/61BUoWgqh5L._SX496_BO1,204,203,200_.jpg" alt="example-image" class="img-rounded img-responsive">
+                    <p>Weird but True 7: 300 Outrageous Facts</p>
+                </div>
+                <div class="col-md-4 recommendation-content">
+                    <p>Recepient 3</p>
+                    <img src="https://images-na.ssl-images-amazon.com/images/I/61BUoWgqh5L._SX496_BO1,204,203,200_.jpg" alt="example-image" class="img-rounded img-responsive">
+                    <p>Weird but True 7: 300 Outrageous Facts</p>
                 </div>
             </div>
             <br />
             <div class="row">
                 <div class="col-md-4 recommendation-content">
-                    <p>Your fourth mate</p>
+                    <p>Recepient 4</p>
                     <img src="https://images-na.ssl-images-amazon.com/images/I/61BUoWgqh5L._SX496_BO1,204,203,200_.jpg" alt="example-image" class="img-rounded img-responsive">
                     <p>Weird but True 7: 300 Outrageous Facts</p>
-                    <div class="row">
-                        <div class="col-md-6">
-                            <a class="btn btn-info btn-lg btn-block" href="#">Love it</a>
-                        </div>
-                        <div class="col-md-6">
-                            <a class="btn btn-warning btn-lg btn-block" href="#">Find me another</a>
-                        </div>
-                    </div>
                 </div>
                 <div class="col-md-4 recommendation-content">
-                    <p>Your fifth mate</p>
+                    <p>Recepient 5</p>
                     <img src="https://images-na.ssl-images-amazon.com/images/I/61BUoWgqh5L._SX496_BO1,204,203,200_.jpg" alt="example-image" class="img-rounded img-responsive">
                     <p>Weird but True 7: 300 Outrageous Facts</p>
-                    <div class="row">
-                        <div class="col-md-6">
-                            <a class="btn btn-info btn-lg btn-block" href="#">Love it</a>
-                        </div>
-                        <div class="col-md-6">
-                            <a class="btn btn-warning btn-lg btn-block" href="#">Find me another</a>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
