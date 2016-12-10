@@ -9,7 +9,7 @@ html {
 }
 
 body {
-  background-color: #f4f4f4;;
+  background-color: #1abc9c;
   margin-bottom: 44px;
   line-height: 1.57142857;
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -280,4 +280,36 @@ textarea {
   border-radius: 2px;
   letter-spacing: 0.2em;
   text-transform: uppercase;
+}
+
+
+
+.navbar {
+    position: relative !important;
+}
+.brand {
+    position: absolute;
+    color: #34495e;
+    /*left: 50%;*/
+    margin-left: -50px !important;  /* 50% of your logo width */
+    display: block;
+    height: 50px;
+    padding: 15px 15px;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 20px;
+}
+
+.home-logo {
+  padding-top: 20px;
+  left: 50%;
+  position: absolute;
+  width: 96px;
+  margin-left: -50px !important;  /* 50% of your logo width */
+}
+
+.home-logo > img {
+  display: block;
+  margin-bottom: 6px;
+  width: 100%;
 }

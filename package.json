@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "My app description",
   "scripts": {
-    "start": "node server.js"
+    "start": "nodemon ./server.js"
   },
   "dependencies": {
     "body-parser": "^1.15.1",
@@ -18,7 +18,9 @@
     "morgan": "^1.7.0",
     "nodemailer": "^2.3.0"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "nodemon": "^1.11.0"
+  },
   "engines": {
     "node": "6.1.0"
   }
