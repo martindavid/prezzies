@@ -1,46 +1,87 @@
 <div class="container-fluid">
   {{#if messages.success}}
-    <div role="alert" class="alert alert-success">
-      {{#each messages.success}}
-        <div>{{msg}}</div>
-      {{/each}}
-    </div>
-  {{/if}}
-  {{#if messages.error}}
-    <div role="alert" class="alert alert-danger">
-      {{#each messages.error}}
-        <div>{{msg}}</div>
-      {{/each}}
-    </div>
-  {{/if}}
-  {{#if messages.info}}
-    <div role="alert" class="alert alert-info">
-      {{#each messages.info}}
-        <div>{{msg}}</div>
-      {{/each}}
-    </div>
+  <div role="alert" class="alert alert-success">
+    {{#each messages.success}}
+    <div>{{msg}}</div>
+    {{/each}}
+  </div>
+  {{/if}} {{#if messages.error}}
+  <div role="alert" class="alert alert-danger">
+    {{#each messages.error}}
+    <div>{{msg}}</div>
+    {{/each}}
+  </div>
+  {{/if}} {{#if messages.info}}
+  <div role="alert" class="alert alert-info">
+    {{#each messages.info}}
+    <div>{{msg}}</div>
+    {{/each}}
+  </div>
   {{/if}}
   <div class="main-page">
     <div class="row">
       <div class="col-md-12">
         <div class="home-logo" style="">
-            <img src="image/gift.svg" alt="Welcome to Mail App" />
-          </div>
+          <img src="image/gift.svg" alt="Welcome to Mail App" />
+        </div>
       </div>
     </div>
   </div>
-  <div class="login">
-        <div class="login-screen">
-          
-          <div class="login-form">
-            <div class="form-group">
-              <input type="text" class="form-control login-field" value="" placeholder="Age" id="login-name" />
-            </div>
-            <div class="form-group">
-              <input type="text" class="form-control login-field" value="" placeholder="Gender" id="login-pass" />
-            </div>
-            <a class="btn btn-primary btn-lg btn-block" href="#">Surprise Me</a>
-          </div>
+  <div class="main-container">
+    <div class="filter-container">
+      <div class="filter-content">
+        <span class="title">Personalized Gift Finder</span>
+        <div class="statement">
+          <span class="GiftGuideStatementPart fadeIn">I am shopping for<span class="GiftGuideStatementKeyword  fadeIn">...</span></span>
         </div>
+        <div class="filter-tag-container">
+            <div class="row" id="first-option">
+              <div class="col-md-3 col-xs-3">
+                <a href="">
+                  <img alt="" src="https://images-na.ssl-images-amazon.com/images/G/01/gcx/gf/age-group-woman-circle._CB278609004_.png" class="filter-tag">
+                </a>
+              </div>
+              <div class="col-md-3 col-xs-3">
+                <a href="">
+                  <img alt="" src="https://images-na.ssl-images-amazon.com/images/G/01/gcx/gf/age-group-man-circle._CB278609306_.png" class="filter-tag">
+                </a>
+              </div>
+              <div class="col-md-3 col-xs-3">
+                <a href="">
+                  <img alt="" src="https://images-na.ssl-images-amazon.com/images/G/01/gcx/gf/age-group-teen-circle._CB278609296_.png" class="filter-tag">
+                </a>
+              </div>
+              <div class="col-md-3 col-xs-3">
+                <a href="">
+                  <img alt="" src="https://images-na.ssl-images-amazon.com/images/G/01/gcx/gf/age-group-kid8-circle._CB278609311_.png" class="filter-tag">
+                </a>
+              </div>
+              <div class="col-md-4 col-xs-4">
+                <a href="">
+                  <img alt="" src="https://images-na.ssl-images-amazon.com/images/G/01/gcx/gf/age-group-kid4-circle._CB278609283_.png" class="filter-tag">
+                </a>
+              </div>
+              <div class="col-md-4 col-xs-4">
+                <a href="">
+                  <img alt="" src="https://images-na.ssl-images-amazon.com/images/G/01/gcx/gf/age-group-kid2-circle._CB278609285_.png" class="filter-tag">
+                </a>
+              </div>
+              <div class="col-md-4 col-xs-4">
+                <a href="">
+                  <img alt="" src="https://images-na.ssl-images-amazon.com/images/G/01/gcx/gf/age-group-kid0-circle._CB278609295_.png" class="filter-tag">
+                </a>
+              </div>
+            </div>
+          </div>
       </div>
+      <div>
+            <ul class="pagination">
+              <li class="active"><a href="#fakelink">1</a></li>
+              <li><a href="#fakelink">2</a></li>
+              <li><a href="#fakelink">3</a></li>
+              <li><a href="#fakelink">4</a></li>
+            </ul>
+          </div>
+    </div>
+  </div>
 </div>
