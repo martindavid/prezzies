@@ -12,11 +12,15 @@
     "express": "^4.13.4",
     "express-flash": "0.0.2",
     "express-handlebars": "^3.0.0",
+    "express-react-views": "^0.10.2",
     "express-session": "^1.2.1",
     "express-validator": "^2.20.4",
     "method-override": "^2.3.5",
     "morgan": "^1.7.0",
-    "nodemailer": "^2.3.0"
+    "nodemailer": "^2.3.0",
+    "react": "^15.4.1",
+    "react-dom": "^15.4.1",
+    "request": "^2.79.0"
   },
   "devDependencies": {
     "nodemon": "^1.11.0"
