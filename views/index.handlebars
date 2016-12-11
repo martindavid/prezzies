@@ -19,15 +19,14 @@
                             <option value="2">2</option>
                             <option value="3">3</option>
                             <option value="4">4</option>
-                            <option value="5">5</option>
                         </select>
                     </span> people<br />
                     <span id="budget-span">and my budget is 
                         <select class="form-control select select-primary" id="budget-select" data-toggle="select">
-                            <option value="1">Any Price</option>
-                            <option value="2">Under $20</option>
-                            <option value="3">$20 to $40</option>
-                            <option value="4">$40 & Above</option>
+                            <option value="ANY">Any Price</option>
+                            <option value="LOW">Under $20</option>
+                            <option value="MEDIUM">$20 to $40</option>
+                            <option value="HIGH">$40 & Above</option>
                         </select>
                         / person
                     </span>
@@ -44,84 +43,162 @@
     <div class="main-container" id="recommendation-part">
         <div class="recommendation-container">
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-6 recipient" id="recipient0">
+                    <span class="text-center">Recepient 1</span>
                     <div class="card large sticky-action">
                         <button class="scroller-button-left"></button>
                         <div class="card-image waves-effect waves-block waves-light">
-                            <img class="activator img-responsive" src="https://images-na.ssl-images-amazon.com/images/I/510y4G3dfuL.jpg">
+                            <img class="activator img-responsive product-img" src="https://images-na.ssl-images-amazon.com/images/I/510y4G3dfuL.jpg">
                         </div>
                         <div class="card-content">
-                            <span class="card-title activator grey-text text-darken-4">Card Title</span>
-                            <p><a href="#">This is a link</a></p>
+                            <span class="card-title activator grey-text text-darken-4 product-title">Product Title</span>
+                            <p>
+                                <a href="#" class="product-link">Detail</a>
+                                <span class="pull-right product-price">$xxx</span>
+                            </p>
                         </div>
                         <div class="card-action">
                             <select class="form-control select select-primary" id="budget-select" data-toggle="select">
-                                <option value="1">Any Price</option>
-                                <option value="2">Under $20</option>
-                                <option value="3">$20 to $40</option>
-                                <option value="4">$40 & Above</option>
+                                <option value="man">Man</option>
+                                <option value="woman">Woman</option>
+                                <option value="teen">Teen</option>
+                                <option value="kid8">Kid 8-12</option>
+                                <option value="kid4">Kid 4-7</option>
+                                <option value="toddler">Toddlers</option>
+                                <option value="baby">Baby</option>
                             </select>
                             <select class="form-control select select-primary" id="budget-select" data-toggle="select">
-                                <option value="1">Any Price</option>
-                                <option value="2">Under $20</option>
-                                <option value="3">$20 to $40</option>
-                                <option value="4">$40 & Above</option>
+                                <option value="">Interests</option>
+                                <option value="art-and-design">Arts & Design</option>
+                                <option value="books">Books</option>
+                                <option value="music">Music</option>
+                                <option value="travel">Travel</option>
                             </select>
                         </div>
                         <div class="card-reveal">
-                            <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-                            <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                            <span class="card-title grey-text text-darken-4 product-title">Card Title<i class="material-icons right">close</i></span>
+                            <p class="product-description">Here is some more information about this product that is only revealed once clicked on.</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-6 recipient" id="recipient1">
+                    <span class="text-center">Recepient 2</span>
                     <div class="card large">
                         <div class="card-image waves-effect waves-block waves-light">
-                            <img class="activator img-responsive" src="https://images-na.ssl-images-amazon.com/images/I/61BUoWgqh5L._SX496_BO1,204,203,200_.jpg">
+                            <img class="activator img-responsive product-img" src="https://images-na.ssl-images-amazon.com/images/I/61BUoWgqh5L._SX496_BO1,204,203,200_.jpg">
                         </div>
                         <div class="card-content">
-                            <span class="card-title activator grey-text text-darken-4">Card Title</span>
-                            <p><a href="#">This is a link</a></p>
+                            <span class="card-title activator grey-text text-darken-4 product-title">Card Title</span>
+                            <p>
+                                <a href="#" class="product-link">Detail</a>
+                                <span class="pull-right product-price">$xxx</span>
+                            </p>
+                            
+                        </div>
+                        <div class="card-action">
+                            <select class="form-control select select-primary" id="budget-select" data-toggle="select">
+                                <option value="man">Man</option>
+                                <option value="woman">Woman</option>
+                                <option value="teen">Teen</option>
+                                <option value="kid8">Kid 8-12</option>
+                                <option value="kid4">Kid 4-7</option>
+                                <option value="toddler">Toddlers</option>
+                                <option value="baby">Baby</option>
+                            </select>
+                            <select class="form-control select select-primary" id="budget-select" data-toggle="select">
+                                <option value="">Interests</option>
+                                <option value="art-and-design">Arts & Design</option>
+                                <option value="books">Books</option>
+                                <option value="music">Music</option>
+                                <option value="travel">Travel</option>
+                            </select>
                         </div>
                         <div class="card-reveal">
-                            <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-                            <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                            <span class="card-title grey-text text-darken-4 product-title">Card Title<i class="material-icons right">close</i></span>
+                            <p class="product-description">Here is some more information about this product that is only revealed once clicked on.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 recipient" id="recipient2">
+                    <span class="text-center">Recepient 3</span>
+                    <div class="card large">
+                        <div class="card-image waves-effect waves-block waves-light">
+                            <img class="activator img-responsive product-img" src="https://images-na.ssl-images-amazon.com/images/I/61BUoWgqh5L._SX496_BO1,204,203,200_.jpg">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title activator grey-text text-darken-4 product-title">Card Title</span>
+                            <p>
+                                <a href="#" class="product-link">Detail</a>
+                                <span class="pull-right product-price">$xxx</span>
+                            </p>
+                        </div>
+                        <div class="card-action">
+                            <select class="form-control select select-primary" id="budget-select" data-toggle="select">
+                                <option value="man">Man</option>
+                                <option value="woman">Woman</option>
+                                <option value="teen">Teen</option>
+                                <option value="kid8">Kid 8-12</option>
+                                <option value="kid4">Kid 4-7</option>
+                                <option value="toddler">Toddlers</option>
+                                <option value="baby">Baby</option>
+                            </select>
+                            <select class="form-control select select-primary" id="budget-select" data-toggle="select">
+                                <option value="">Interests</option>
+                                <option value="art-and-design">Arts & Design</option>
+                                <option value="books">Books</option>
+                                <option value="music">Music</option>
+                                <option value="travel">Travel</option>
+                            </select>
+                        </div>
+                        <div class="card-reveal">
+                            <span class="card-title grey-text text-darken-4 product-title">Card Title<i class="material-icons right">close</i></span>
+                            <p class="product-description">Here is some more information about this product that is only revealed once clicked on.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 recipient" id="recipient3">
+                    <span class="text-center">Recepient 4</span>
+                    <div class="card large">
+                        <div class="card-image waves-effect waves-block waves-light">
+                            <img class="activator img-responsive product-img" src="https://images-na.ssl-images-amazon.com/images/I/61BUoWgqh5L._SX496_BO1,204,203,200_.jpg">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title activator grey-text text-darken-4 product-title">Card Title</span>
+                            <p>
+                                <a href="#" class="product-link">This is a link</a>
+                                <span class="pull-right product-price">$xxx</span>
+                            </p>
+                        </div>
+                        <div class="card-action">
+                            <select class="form-control select select-primary" id="budget-select" data-toggle="select">
+                                <option value="man">Man</option>
+                                <option value="woman">Woman</option>
+                                <option value="teen">Teen</option>
+                                <option value="kid8">Kid 8-12</option>
+                                <option value="kid4">Kid 4-7</option>
+                                <option value="toddler">Toddlers</option>
+                                <option value="baby">Baby</option>
+                            </select>
+                            <select class="form-control select select-primary" id="budget-select" data-toggle="select">
+                                <option value="">Interests</option>
+                                <option value="art-and-design">Arts & Design</option>
+                                <option value="books">Books</option>
+                                <option value="music">Music</option>
+                                <option value="travel">Travel</option>
+                            </select>
+                        </div>
+                        <div class="card-reveal">
+                            <span class="card-title grey-text text-darken-4 product-title">Card Title<i class="material-icons right">close</i></span>
+                            <p class="product-description">Here is some more information about this product that is only revealed once clicked on.</p>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-md-4 recommendation-content">
-                    <button class="scroller-button-left"></button>
-                    <p>Recepient 1</p>
-                    <img src="https://images-na.ssl-images-amazon.com/images/I/61BUoWgqh5L._SX496_BO1,204,203,200_.jpg" alt="example-image" class="img-rounded img-responsive">
-                    <p>Weird but True 7: 300 Outrageous Facts</p>
-                    <button class="scroller-button-right"></button>
+            <div class="row" id="finish-button">
+                    <div class="surprise-me">
+                        <a class="btn btn-info btn-lg btn-block" href="#" id="order-button">Make an Order <i class="fa fa-shopping-cart"></i> </a>
+                    </div>
                 </div>
-                <div class="col-md-4 recommendation-content">
-                    <p>Recepient 2</p>
-                    <img src="https://images-na.ssl-images-amazon.com/images/I/61BUoWgqh5L._SX496_BO1,204,203,200_.jpg" alt="example-image" class="img-rounded img-responsive">
-                    <p>Weird but True 7: 300 Outrageous Facts</p>
-                </div>
-                <div class="col-md-4 recommendation-content">
-                    <p>Recepient 3</p>
-                    <img src="https://images-na.ssl-images-amazon.com/images/I/61BUoWgqh5L._SX496_BO1,204,203,200_.jpg" alt="example-image" class="img-rounded img-responsive">
-                    <p>Weird but True 7: 300 Outrageous Facts</p>
-                </div>
-            </div>
-            <br />
-            <div class="row">
-                <div class="col-md-4 recommendation-content">
-                    <p>Recepient 4</p>
-                    <img src="https://images-na.ssl-images-amazon.com/images/I/61BUoWgqh5L._SX496_BO1,204,203,200_.jpg" alt="example-image" class="img-rounded img-responsive">
-                    <p>Weird but True 7: 300 Outrageous Facts</p>
-                </div>
-                <div class="col-md-4 recommendation-content">
-                    <p>Recepient 5</p>
-                    <img src="https://images-na.ssl-images-amazon.com/images/I/61BUoWgqh5L._SX496_BO1,204,203,200_.jpg" alt="example-image" class="img-rounded img-responsive">
-                    <p>Weird but True 7: 300 Outrageous Facts</p>
-                </div>
-            </div>
         </div>
     </div>
 </div>

@@ -422,7 +422,7 @@ button.GiftGuideTag:hover{
   -webkit-transition: opacity 100ms;
   transition: opacity 100ms;
   margin-bottom: 100px;
-  height: 1100px;
+  height: 1250px;
 }
 
 
@@ -563,4 +563,8 @@ button.GiftGuideTag:hover{
   -webkit-transition: opacity 200ms;
   transition: opacity 200ms;
   -webkit-backface-visibility: hidden;
+}
+
+.override-card-action{
+  color: white !important;
 }

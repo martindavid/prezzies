@@ -16,6 +16,7 @@ dotenv.load();
 // Controllers
 var HomeController = require('./controllers/home');
 var contactController = require('./controllers/contact');
+var CheckoutController = require('./controllers/checkout');
 
 var app = express();
 
@@ -49,6 +50,8 @@ app.use(flash());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.get('/', HomeController.index);
+app.get('/checkout', CheckoutController.index);
+app.get('/checkout-success', CheckoutController.checkoutSuccess);
 app.get('/contact', contactController.contactGet);
 app.post('/contact', contactController.contactPost);
 
