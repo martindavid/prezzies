@@ -27,7 +27,7 @@ $(function() {
         $(recipientId + " .product-title").text(product.title);
         $(recipientId + " .product-price").text(product.price);
         $(recipientId + " .product-description").text(product.text);
-        $(recipientId + " .product-link").attr
+        $(recipientId + " .product-link").attr("href", product.link);
       }
       $('#loader').hide();
       localStorage.setItem('products', JSON.stringify(products));
@@ -66,6 +66,7 @@ $(function() {
         product.title = data.objects[0].title;
         product.text = data.objects[0].text;
         product.price = data.objects[0].offerPrice;
+        product.link = data.objects[0].pageUrl;
       }
     });
     return product;
