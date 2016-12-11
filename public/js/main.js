@@ -1,21 +1,19 @@
 $(function() {
- 
-
   $('#surprise-me-button').click(function(){
     $('#loader').show();
     $('#recommendation-part').hide();
     var numOfPeople = $('#person-num-select').val();
     var budget = $('#budget-select').val();
     var ageGroup = ["man", "woman","teen","kid8","kid4","toddler", "baby"];
-    var interest = ["movies-and-tv", "music","reading", "style-and-fashion"];
+    var interest = ["arts-and-design","books", "music","reading","travel", "style-and-fashion"];
     var selectedAgeGroup = ageGroup[Math.floor(Math.random() * 7)];
-    var selectedInterest = interest[Math.floor(Math.random() * 4)];
+    var selectedInterest = interest[Math.floor(Math.random() * 6)];
     var amazonUrl = "https://www.amazon.com/gp/gift-finder?ageGroup=" + selectedAgeGroup + "&budgets=" + budget + "&interest=" + selectedInterest;
     amazonUrl += ""
     var diffBotUrl = "http://api.diffbot.com/v3/AmazonGifts?token=28b8a52cd5034bb1446ab8cdc7f318eb&url=" + encodeURIComponent(amazonUrl);
     var deffereds = [];
     var products = [];
-    $(".age-select").val(selectedAgeGroup);
+    $(".age-select").select2("val",selectedAgeGroup); 
     
     $.get(diffBotUrl, function(data) {
       var items = data.objects[0].items;
@@ -29,6 +27,7 @@ $(function() {
         $(recipientId + " .product-title").text(product.title);
         $(recipientId + " .product-price").text(product.price);
         $(recipientId + " .product-description").text(product.text);
+        $(recipientId + " .product-link").attr
       }
       $('#loader').hide();
       localStorage.setItem('products', JSON.stringify(products));
@@ -74,11 +73,14 @@ $(function() {
 
   function constructCheckoutPage() {
     var products = JSON.parse(localStorage.getItem('products'));
+    var total = 0;
     for (var i = 0; i < products.length; i++) {
       var recipientId = "#recipient" + i;
       $(recipientId + " .product-img").attr('src', products[i].imageUrl);
       $(recipientId + " .product-title").text(products[i].title);
       $(recipientId + " .product-price").text(products[i].price);
+      total += Number.parseFloat(products[i].price.substr(1));
+      $('#total-span').text(total.toFixed(2));
       $(recipientId).show();
     }
   }
@@ -89,7 +91,6 @@ $(function() {
   }
 
   $(document).ready(function() {
-    $('#recommendation-part').hide();
     $('#loader').hide();
     $('.recipient').hide();
 
